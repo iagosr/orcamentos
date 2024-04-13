@@ -29,4 +29,6 @@ $orcamentoAntigo->addItem($orcamentoMaisAntigoAinda);
 
 $orcamento->addItem($orcamentoAntigo);
 
-echo $orcamento->valor();
+$proxyCache = new \Iago\DesignPattern\CacheOrcamentoProxy($orcamento);
+
+echo $proxyCache->valor();
