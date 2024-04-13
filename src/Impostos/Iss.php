@@ -4,9 +4,9 @@ namespace Iago\DesignPattern\Impostos;
 
 use Iago\DesignPattern\Orcamento;
 
-class Iss
+class Iss extends Imposto
 {
-    public function calculaImposto(Orcamento $orcamento): float
+    public function realizaCalculoEspecifico(Orcamento $orcamento): float
     {
         return $orcamento->valor * 0.06;
     }

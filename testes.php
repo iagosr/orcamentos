@@ -7,17 +7,19 @@ use Iago\DesignPattern\Orcamento;
 
 require 'vendor/autoload.php';
 
-/*
+
 $calculadora = new CalculadoraDeImpostos;
 $orcamento = new Orcamento;
 $orcamento->valor = 100;
 
 echo $calculadora->calcula($orcamento, new Icms);
-*/
 
+
+/*
 $calculadora = new CalculadoraDeDescontos;
 $orcamento = new Orcamento;
 $orcamento->valor = 200;
 $orcamento->quantidadeItens = 7;
 
 echo $calculadora->calculaDescontos($orcamento);
+*/
