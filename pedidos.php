@@ -1,8 +1,6 @@
 <?php
 
 use Iago\DesignPattern\Orcamento;
-use Iago\DesignPattern\Pedido\Pedido;
-use Iago\DesignPattern\Pedido\TemplatePedido;
 
 require 'vendor/autoload.php';
 
