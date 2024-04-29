@@ -1,18 +1,17 @@
 <?php
 
-use Iago\DesignPattern\DadosExtrinsecosPedido;
 use Iago\DesignPattern\Orcamento;
-use Iago\DesignPattern\Pedido;
+use Iago\DesignPattern\Pedido\Pedido;
+use Iago\DesignPattern\Pedido\TemplatePedido;
 
 require 'vendor/autoload.php';
 
 $pedidos = [];
-$dados = new DadosExtrinsecosPedido(md5('a'), new DateTimeImmutable());
+$criadorPedido = new \Iago\DesignPattern\Pedido\CriadorDePedido;
 
 for ($i = 0; $i < 10000; $i++) {
-    $pedido = new Pedido;
-    $pedido->dados = $dados;
-    $pedido->orcamento = new Orcamento;
+    $orcamento = new Orcamento();
+    $pedido = $criadorPedido->criaPedido('Iago', date('Y-m-d'), $orcamento);
 
     $pedidos[] = $pedido;
 }
