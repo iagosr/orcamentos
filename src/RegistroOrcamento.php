@@ -1,8 +1,8 @@
 <?php
 
-namespace Alura\DesignPattern;
+namespace Iago\DesignPattern;
 
-use Alura\DesignPattern\Http\HttpAdapter;
+use Iago\DesignPattern\Http\HttpAdapter;
 use Iago\DesignPattern\EstadosOrcamentos\Finalizado;
 use Iago\DesignPattern\Orcamento;
 

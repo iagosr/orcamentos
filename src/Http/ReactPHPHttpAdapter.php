@@ -1,6 +1,6 @@
 <?php
 
-namespace Alura\DesignPattern\Http;
+namespace Iago\DesignPattern\Http;
 
 class ReactPHPHttpAdapter implements HttpAdapter
 {
